@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string opcion;
+
+    cout << "Selecciona el concepto que quieres saber:" << endl;
+    cout << "A. ¿Que es un lenguaje compilado?" << endl;
+    cout << "B. ¿Que es un lenguaje interpretado?" << endl;
+    cout << "C. ¿A que tipo pertenece C++?" << endl;
+    cout << "Ingrese la opcion (A, B, C): ";
+    cin >> opcion;
+    cout << endl;
+
+    if (opcion == "A") {
+        cout << "Lenguaje Compilado:" << endl;
+        cout << "Un lenguaje compilado es aquel cuyo codigo fuente "
+             << "se traduce completamente a lenguaje maquina mediante "
+             << "un compilador antes de ejecutarse."
+             << endl;
+    } 
+    else if (opcion == "B") {
+        cout << "Lenguaje Interpretado:" << endl;
+        cout << "Un lenguaje interpretado es aquel cuyo codigo se ejecuta "
+             << "linea por linea mediante un interprete."
+             << endl;
+    } 
+    else if (opcion == "C") {
+        cout << "C++:" << endl;
+        cout << "C++ pertenece a los lenguajes compilados."
+             << endl;
+    } 
+    else {
+        cout << "Opcion no valida." << endl;
+    }
+
+    cout << endl;
+
+    int opcion2;
+
+    cout << "Seleccione un paradigma:" << endl;
+    cout << "1. Estructurado" << endl;
+    cout << "2. Orientado a Objetos" << endl;
+    cout << "Ingrese su opcion (1 o 2): ";
+    cin >> opcion2;
+    cout << endl;
+
+    if (opcion2 == 1) {
+        cout << "Paradigma Estructurado:" << endl;
+        cout << "Se basa en el uso de funciones, estructuras de control "
+             << "(if, while, for) y organizacion del codigo en procedimientos."
+             << endl;
+    } 
+    else if (opcion2 == 2) {
+        cout << "Paradigma Orientado a Objetos:" << endl;
+        cout << "Se basa en el uso de clases y objetos. "
+             << "Permite aplicar conceptos como encapsulamiento, "
+             << "herencia y polimorfismo."
+             << endl;
+    } 
+    else {
+        cout << "Opcion no valida." << endl;
+    }
+
+    return 0;
+}
